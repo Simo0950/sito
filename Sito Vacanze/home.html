@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spiegazione Cubo Rubik</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fontawesome-free-5.15.4-web/css/all.css"
+    />
+  </head>
+
+  <body>
+    <div id="contenitore">
+      <div id="menu">
+        <nav>
+          <ul id="contMenu">
+            <li><i class="fas fa-cube"></i></li>
+
+            <li>
+              <a href="home.html" class="titoliMenu">
+                <i class="fas fa-home"></i> <b>HOME</b>
+              </a>
+            </li>
+
+            <li class="haMenu">
+              <a href="#" class="titoliMenu">
+                <i class="fab fa-angellist"></i> <b>CREDITS</b>
+                <i class="fas fa-caret-down"></i>
+              </a>
+              <ul class="menuTendina">
+                <li>
+                  <center>
+                    <a href="fileHtml/info.html">
+                      <b><i class="fas fa-info-circle"></i> INFO </b>
+                    </a>
+                  </center>
+                </li>
+                <li>
+                  <center>
+                    <a href="fileHtml/me.html">
+                      <b> <i class="fas fa-address-card"></i> CHI SONO</b>
+                    </a>
+                  </center>
+                </li>
+              </ul>
+            </li>
+            <li class="haMenu">
+              <a href="#" class="titoliMenu">
+                <i class="far fa-bookmark"></i> <b>OTHER</b>
+                <i class="fas fa-caret-down"></i>
+              </a>
+              <ul class="menuTendina">
+                <li>
+                  <center>
+                    <a href="fileHtml/games.html">
+                      <b> <i class="fas fa-gamepad"></i> GAMES</b>
+                    </a>
+                  </center>
+                </li>
+                <li>
+                  <center>
+                    <a href="https://www.animeworld.tv/">
+                      <b> <i class="fab fa-autoprefixer"></i> ANIME</b>
+                    </a>
+                  </center>
+                </li>
+              </ul>
+            </li>
+
+            <li id="registrazione">
+              <a href="fileHtml/login.html" class="titoliMenu"
+                ><i class="fas fa-user"> </i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="corpoCentrale">
+        <div id="primaParte">
+          <div id="segnalibri">
+            <label class="titolo"> <b> Indice </b> </label>
+            <ul>
+              <li>
+                <a href="#introduzione"> <b>Introduzione</b> </a>
+              </li>
+              <li>
+                <a href="#pStrato"> <b>Primo Strato</b> </a>
+              </li>
+              <li>
+                <a href="#sStrato"> <b>Secondo Strato</b> </a>
+              </li>
+              <li>
+                <a href="#tStrato"> <b>Terzo Strato</b> </a>
+              </li>
+            </ul>
+          </div>
+
+          <div id="introduzione">
+            <label class="titolo">
+              <a name="introduzione">
+                <b> COME RISOLVERE IL CUBO DI RUBIK </b>
+              </a>
+            </label>
+            <br />
+
+            <label class="testo">
+              Ci sono vari modi per risolvere il cubo di Rubik, questo è
+              probabilmente il più semplice e si chiama <b>METODO A STRATI</b>.
+              Come dice il nome, il metodo a strati, consiste nel risolvere
+              prima lo strato inferiore, poi lo strato medio e infine lo strato
+              superiore, questo grazie all'utilizzo di algoritmi. Prima di
+              iniziare devi sapere il significato di alcune lettere:
+              <b
+                >F = Front, B = Back, R = Right, L = Left, U = UP e D = Down
+              </b>
+              se trovi scritte queste lettere maiuscole, allora significa che
+              devi girare la faccia indicata con la lettera di 90 gradi in senso
+              orario. Mentre se di fianco alla lettera c'è un 1 (<b
+                >F1, B1, R1, L1, U1, D1 </b
+              >) significa che il giro fa fatto in senso antiorario.
+            </label>
+          </div>
+        </div>
+
+        <div id="primoStrato">
+          <label class="titolo">
+            <a name="pStrato"> <b> PRIMO STRATO </b> </a>
+          </label>
+          <br />
+
+          <label class="testo">
+            Per risolvere il primo strato bisogna innanzitutto creare una croce
+            bianca (o di qualsiasi altro colore) con i spigoli messi al posto
+            giusto (quindi dello stesso colore del centro di ogni faccia).
+            <br />
+            <img id="croceBianca" src="immagini/croceBianca.png" alt="" />
+            <br />
+            Fatta la croce bianca bisognerà, prima di tutto, posizionare la
+            croce bianca verso il basso, poi trovare gli angoli mancanti,
+            posizionarli nel posto giusto (per esempio fatta la croce trovo
+            l'angolo con le faccie bianca, verde e rosso e lo posizionerò dove
+            si trovano le faccie verdi e rosso) e fare l'algoritmo
+            <b> R U R1 U1 </b>
+            (nella terza immagine i colori indicano l'algoritmo)
+            <br />
+            <img class="cubo" src="immagini/trovatoAngolo.png" alt="" />
+            <img class="cubo" src="immagini/spostatoAngolo.png" alt="" />
+            <img class="cubo" src="immagini/sexyMove.png" alt="" />
+            <br />
+            L'algoritmo va eseguito finchè l'angolo non si trova nel posto
+            giusto.
+          </label>
+        </div>
+
+        <div id="secondoStrato">
+          <label class="titolo">
+            <a name="sStrato"> <b> SECONDO STRATO </b> </a>
+          </label>
+          <br />
+
+          <label class="testo">
+            Finito di fare il primo strato dovremmo avere una situazione simile.
+            <br />
+            <img class="cubo" src="immagini/finePrimoStrato.png" alt="" />
+            <img class="cubo" src="immagini/trovatoSpigolo.png" alt="" />
+            <img class="cubo" src="immagini/casoDestra.png" alt="" />
+            <br />
+            Per iniziare a fare il secondo strato bisognerà fare delle
+            <b>T</b> al contrario trovando lo spigolo giusto da spostare come
+            nella seconda immagine. Trovato lo spigolo da spostare e messo nella
+            posizione giusta si possono distinguere due casi: se si deve
+            spostare verso sinistra, come nella seconda immagine, allora
+            bisognerà usare l'algoritmo <b>U1 L1 U L U F U1 F1</b> (bisogna
+            tenere la faccia con la <b>T</b> al contrario da davanti), e il caso
+            in cui si deve spostare verso destra come mostra la terza immagine e
+            l'algoritmo sarà <b>U R U1 R1 U1 F1 U F</b> e si dovranno fare
+            finchè tutto il secondo strato non sarà completato.
+          </label>
+        </div>
+
+        <div id="terzoStrato">
+          <label class="titolo">
+            <a name="tStrato"> <b> TERZO STRATO </b> </a>
+          </label>
+          <br />
+
+          <label class="testo">
+            Finito il secondo strato si dovrà avere una situazione del genere.
+            <br />
+            Questo è l'ultimo strato e per risolverlo si divide in tre fasi.
+            <br />
+            <img src="immagini/fineSecondoStrato.png" alt="" class="cubo" />
+            <br />
+            <label class="titolo"> <b> Prima Fase </b> </label>
+            <br />
+            <img src="immagini/primaFase.png" alt="" class="cubo" />
+            <img src="immagini/primoCaso.png" alt="" class="cubo" />
+            <img src="immagini/secondoCaso.png" alt="" class="cubo" />
+            <img src="immagini/terzoCaso.png" alt="" class="cubo" />
+            <img src="immagini/quartoCaso.png" alt="" class="cubo" />
+            <br />
+            La prima fase consiste nel fare una croce gialla e per farla si deve
+            fare un algoritmo, guardando in che caso ci si trova (immagini dalla
+            2 alla 5), <b>F R U R1 U1 F1</b> una volta fatto ci si trovarà al
+            caso successivo e si dovrà rifare l'algoritmo finchè non si arriva
+            al quarto caso (ultima immagine).
+            <br />
+            <label class="titolo"> <b> Seconda Fase </b> </label>
+            <br />
+            <img src="immagini/finitaPrimaFase.png" alt="" class="cubo" />
+            <img src="immagini/primoCasoSecondaFase.png" alt="" class="cubo" />
+            <img
+              src="immagini/secondoCasoSecondaFase.png"
+              alt=""
+              class="cubo"
+            />
+            <img src="immagini/terzoCasoSecondaFase.png" alt="" class="cubo" />
+            <br />
+            Finita la prima fase si avrà una croce gialla con gli spigoli che
+            potranno non essere al posto giusto e la seconda fase consiste nello
+            spostare questi spigoli e anche in questa fase ci sono 3 casi
+            possibili (dall'immagine 2 alla 4) e si dovrà fare l'algoritmo
+            <b>R U R1 U R U U R1</b> anche in questo caso quando si fa
+            l'algoritmo si passerà al caso successivo fino ad arrivare
+            all'ultimo
+            <br />
+            <label class="titolo"> <b> Terza Fase </b> </label>
+            <br />
+            Finita la seconda fase avremo la croce gialla con gli spigoli che si
+            trovano al posto giusto e ora manca un ultimo passaggio che consiste
+            nello spostare gli angoli e metterli al posto giusto.
+            <br />
+            <img src="immagini/finitaSecondaFase.png" alt="" class="cubo" />
+            <img src="immagini/terzaFase.png" alt="" class="cubo" />
+            <br />
+            Se si ha un' angolo al posto giusto come nell'immagine allora basta
+            guardare la faccia dell'angolo (nell'immagine la faccia verde) e
+            tenere l'angolo alla nostra sinistra (seconda immagine) e fare
+            l'algoritmo <b>R U1 L1 U R1 U1 L U</b> finchè tutti gli angoli
+            saranno al posto giusto quando tutti gli angoli saranno al posto
+            giusto bisognerà fare un'ultimo passaggio come nel primo strato
+            ovvero giriamo il cubo per far si che la faccia gialla sia verso il
+            basso e bisognerà fare l'algoritmo R U R1 U1 finche il primo angolo
+            non sarà al posto giusto, quando il primo angolo sarà al posto
+            giusto allora si gira la faccia gialla (facciamo la mossa
+            <b>D = Down</b>) quindi la faccia in basso finchè non troviamo un
+            altro angolo da far girare, fatti tutti gli angoli avremo finito i
+            fare il cubo.
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
